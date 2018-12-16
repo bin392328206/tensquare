@@ -26,6 +26,23 @@
 </modules>
 
 
+
+    <dependencies>
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>my-ten-square-commons</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>com.qf</groupId>
+            <artifactId>my-ten-square-domain</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
