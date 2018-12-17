@@ -13,7 +13,8 @@ spring:
       max-active: 20
       test-on-borrow: true
       driver-class-name: com.mysql.cj.jdbc.Driver
-
+  mvc:
+    static-path-pattern: /static/**
   jpa:
       show-sql: true
       database: MYSQL
