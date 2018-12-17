@@ -6,7 +6,7 @@
         <groupId>com.qf</groupId>
         <artifactId>my-ten-square-dependencies</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../my-ten-square-dependencies/pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.qf</groupId>
     <artifactId>my-ten-square-domain</artifactId>
@@ -25,14 +25,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-
-
-
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-data-jpa -->
-
-
-
-
     </dependencies>
 
     <build>

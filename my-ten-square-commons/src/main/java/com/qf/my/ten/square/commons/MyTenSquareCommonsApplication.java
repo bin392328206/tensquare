@@ -3,6 +3,7 @@ package com.qf.my.ten.square.commons;
 import com.qf.my.ten.square.commons.utils.IdWorker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication

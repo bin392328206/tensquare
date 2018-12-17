@@ -6,7 +6,7 @@
         <groupId>com.qf</groupId>
         <artifactId>my-ten-square-dependencies</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../my-ten-square-dependencies/pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.qf</groupId>
     <artifactId>my-ten-square-commons</artifactId>
