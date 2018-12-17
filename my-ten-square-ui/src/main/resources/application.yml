@@ -15,10 +15,8 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
   mvc:
     static-path-pattern: /static/**
-<<<<<<< HEAD
 
-=======
->>>>>>> ce0027f59573c017a8e4fd7e9d957b33b4cbf654
+
   jpa:
       show-sql: true
       database: MYSQL
