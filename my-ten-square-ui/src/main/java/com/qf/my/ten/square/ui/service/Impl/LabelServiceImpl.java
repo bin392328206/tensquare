@@ -30,6 +30,7 @@ public class LabelServiceImpl extends BaseServiceImpl<TbLabel,LabelDao> implemen
     @Override
     public void add(TbLabel tbLabel){
         tbLabel.setId(idWorker.nextId()+"");
+        System.out.println(1111);
         baseDao.save(tbLabel);
     }
 
