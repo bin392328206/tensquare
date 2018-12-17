@@ -18,8 +18,8 @@ public class BaseExceptionHandler {
      */
 
     @ExceptionHandler(Exception.class)
-    @ResponseBody
-    public Result error(Exception e){
-        return new Result(false, StatusCode.ERROR,e.getMessage());
+    public String error(Exception e){
+        System.out.println(e.getMessage());
+        return "error";
     }
 }

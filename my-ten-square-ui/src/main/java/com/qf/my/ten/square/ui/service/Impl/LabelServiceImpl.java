@@ -1,5 +1,6 @@
 package com.qf.my.ten.square.ui.service.Impl;
 
+import com.qf.my.ten.square.commons.persistence.Impl.BaseServiceImpl;
 import com.qf.my.ten.square.commons.utils.IdWorker;
 import com.qf.my.ten.square.domain.entity.TbLabel;
 import com.qf.my.ten.square.ui.dao.LabelDao;
@@ -17,35 +18,11 @@ import java.util.List;
  */
 
 @Service
-public class LabelServiceImpl implements LableService {
-
-    @Autowired
-    private LabelDao labelDao;
+public class LabelServiceImpl extends BaseServiceImpl<TbLabel,LabelDao> implements LableService {
 
 
     @Autowired
     private IdWorker idWorker;
-
-
-    /**
-     * 查询全部标签
-     * @return
-     */
-    @Override
-    public List<TbLabel> findAll(){
-        return labelDao.findAll();
-    }
-
-
-    /**
-     * 根据id查询标签
-     *
-     */
-    @Override
-    public TbLabel findById(String id){
-        return labelDao.findById(id).get();
-    }
-
 
     /**
      * 增加标签
@@ -53,24 +30,10 @@ public class LabelServiceImpl implements LableService {
     @Override
     public void add(TbLabel tbLabel){
         tbLabel.setId(idWorker.nextId()+"");
-        labelDao.save(tbLabel);
+        baseDao.save(tbLabel);
     }
 
 
-    /**
-     * 修改标签
-     */
-    @Override
-    public void update(TbLabel tbLabel){
-        labelDao.save(tbLabel);
-    }
 
 
-    /**
-     * 删除标签
-     */
-    @Override
-    public void deleteById(String id){
-        labelDao.deleteById(id);
-    }
 }

@@ -34,6 +34,7 @@ public class LabelController  {
     @ResponseBody
     public Result findAll(){
         List<TbLabel> list= labelService.findAll();
+
         return new Result(true, StatusCode.Ok,"查询全部成功",list);
     }
 
